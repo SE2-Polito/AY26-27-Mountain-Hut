@@ -1,0 +1,83 @@
+# Install at .github/ISSUE_TEMPLATE/process-question.yml on the default branch.
+# Add an assignee only after confirming the Scrum Master's GitHub username.
+name: Scrum process question
+description: Ask the Scrum Master about the team's development process.
+title: "[Process] "
+labels: ["process", "scrum-master"]
+assignees: ["phisaz"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to ask the Scrum Master about planning, Scrum roles,
+        meetings, work tracking or collaboration within your team.
+
+        Use **Requirement clarification** for questions about what the Mountain
+        Hut system should do. Keep implementation bugs in your team's repository.
+        For grading questions, follow the course's designated channel.
+
+        Open one issue per distinct question. Give it a descriptive title, for
+        example: **[Process] How should we handle unfinished work at sprint end?**
+
+        This issue is visible to everyone with access to the repository. Discuss
+        confidential personal or team concerns privately with teaching staff.
+
+  - type: checkboxes
+    id: existing-guidance
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have checked the available course process guidance and searched open and closed issues for this question.
+          required: true
+
+  - type: input
+    id: team
+    attributes:
+      label: Team identifier
+      description: Use the identifier assigned to your team in the course.
+      placeholder: "Example: Team 07"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Process topic
+      options:
+        - Sprint planning and work selection
+        - Roles and responsibilities
+        - Scrum meetings and collaboration
+        - Backlog, task tracking and estimation
+        - Definition of Done and unfinished work
+        - Sprint review and retrospective
+        - Other process question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and existing guidance
+      description: Briefly describe the situation. Quote or link to relevant course guidance, or explain what information you could not find. Mention the sprint if relevant.
+      placeholder: |
+        During Sprint 1, we expect a selected story to remain unfinished.
+        We could not find guidance on how to represent this in the next sprint.
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question for the Scrum Master
+      description: State the process decision or explanation your team needs.
+      placeholder: What should we do with an unfinished story when planning the next sprint?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-approach
+    attributes:
+      label: Proposed approach
+      description: Optionally describe what your team proposes and why. This helps the Scrum Master understand your reasoning.
+    validations:
+      required: false

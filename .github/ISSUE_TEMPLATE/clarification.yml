@@ -1,0 +1,88 @@
+# Install at .github/ISSUE_TEMPLATE/clarification.yml on the default branch.
+# No custom labels or staff usernames are required.
+# Form schema: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+name: Requirement clarification
+description: Ask a question about a shared Mountain Hut requirement to the Product Owner.
+title: "[Clarification] "
+labels: ["user-stories", "product-owner"]
+assignees: ["mtorchiano"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for one distinct question about the shared requirements.
+        Include the story ID and a short question in the issue title, for example:
+        **[Clarification] MH-06: Meaning of the 48-hour change window**
+
+        Use **Scrum process question** for questions to the Scrum Master about planning, Scrum roles,
+        meetings, work tracking or collaboration within your team.
+
+        Read the story's Notes and Clarifications sections and search open and
+        closed issues first. Keep team-specific implementation questions in
+        your team's project repository.
+
+  - type: checkboxes
+    id: existing-information
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have read the relevant story, including its Notes and Clarifications sections.
+          required: true
+        - label: I have searched open and closed issues and found no existing issue that covers this question.
+          required: true
+
+  - type: input
+    id: team
+    attributes:
+      label: Team identifier
+      description: Use the identifier assigned to your team in the course.
+      placeholder: "Example: Team 07"
+    validations:
+      required: true
+
+  - type: input
+    id: story-id
+    attributes:
+      label: Primary story ID
+      description: Enter the ID from the story file. For a question about the whole specification, enter General.
+      placeholder: "Example: MH-06"
+    validations:
+      required: true
+
+  - type: input
+    id: baseline
+    attributes:
+      label: Requirements version or baseline
+      description: Include the assigned tag or commit identifier if available. You can also include related story IDs here.
+      placeholder: "Example: sprint-1-v1, commit abc1234; related story MH-13"
+    validations:
+      required: false
+
+  - type: textarea
+    id: wording
+    attributes:
+      label: Wording or missing information
+      description: Quote the relevant wording and link to the story if possible. If information is missing, identify the section and describe the gap.
+      placeholder: 'MH-06, Notes: "Changes are admitted within 48 hours from the date booked."'
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Clarification needed
+      description: State the question clearly. Include a concrete example when it helps distinguish possible interpretations.
+      placeholder: |
+        Does the 48-hour window run from the time the reservation was created,
+        or does it refer to the time remaining before the reserved meal?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-interpretation
+    attributes:
+      label: Proposed interpretation
+      description: Optionally explain your interpretation and why it seems consistent with the story. Staff will confirm the decision.
+    validations:
+      required: false
+
