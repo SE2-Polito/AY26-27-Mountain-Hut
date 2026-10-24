@@ -37,4 +37,10 @@ Its value is to help visitors plan with greater confidence, help staff use limit
 
 This document establishes the setting, terminology, and reasons for the project. The accompanying user stories define the specific capabilities and business rules, and distinguish the proposed work from possible additions.
 
+The system should provide an home page that provides a general description of the mountain hut, location, how to get there, possible point of interest reachable from the hut etc., examples:
+
+https://www.rifugiogarelli.com
+https://www.rifugiofontanamura.it
+https://www.rifugiosella.it/
+
 ---
