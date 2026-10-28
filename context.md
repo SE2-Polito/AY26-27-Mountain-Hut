@@ -21,6 +21,15 @@ The hut brings together visitors planning or undertaking mountain activities and
 
 A **party** is a group of people travelling or using hut services together. One hiker acts as the party’s point of contact with the system; the party itself is not a separate user role.
 
+### Hiker Information
+
+When a hiker register with the system they must provide:
+- full name
+- email
+- mobile number
+- notes (e.g. "registered mountain guide") (optional)
+- emergency contact (optional)
+
 ## Why a system is needed
 
 Visitors need a dependable basis for planning their stop at the hut. Uncertainty about services or arrangements can affect the wider journey, particularly when alternatives are distant or plans change during a trip.
