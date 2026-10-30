@@ -24,11 +24,17 @@ A **party** is a group of people travelling or using hut services together. One 
 ### Hiker Information
 
 When a hiker register with the system they must provide:
+
 - full name
 - email
 - mobile number
 - notes (e.g. "registered mountain guide") (optional)
 - emergency contact (optional)
+
+Concerning the other users (warden and employee) the only required information are:
+
+- name
+- email
 
 ## Why a system is needed
 
