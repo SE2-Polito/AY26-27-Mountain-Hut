@@ -37,15 +37,26 @@ Stories are sorted by decreasing business value.
 | [MH-08](stories/MH-08.md) | Cancel a booking | 950 |
 | [MH-09](stories/MH-09.md) | Repeat a weekly schedule | 945 |
 | [MH-10](stories/MH-10.md) | Define menus | 940 |
+| [MH-20](stories/MH-20.md) | Register a hike | 938 |
 | [MH-11](stories/MH-11.md) | View meal details | 935 |
+| [MH-21](stories/MH-21.md) | View active hikes | 932 |
+| [MH-22](stories/MH-22.md) | Confirm safe arrival | 931 |
 | [MH-12](stories/MH-12.md) | Monitor occupancy | 930 |
+| [MH-24](stories/MH-24.md) | Identify overdue hikers | 928 |
+| [MH-23](stories/MH-23.md) | Register party members | 925 |
 | [MH-13](stories/MH-13.md) | Change a reservation | 920 |
 | [MH-14](stories/MH-14.md) | Receive Updates | 915 |
+| [MH-25](stories/MH-25.md) | Access emergency details | 910 |
 | [MH-15](stories/MH-15.md) | Cancel a reservation | 905 |
 | [MH-16](stories/MH-16.md) | Join a waiting list | 900 |
+| [MH-26](stories/MH-26.md) | Notify late hiker | 895 |
 | [MH-17](stories/MH-17.md) | Close a slot | 890 |
 | [MH-18](stories/MH-18.md) | Handle affected bookings | 880 |
 | [MH-19](stories/MH-19.md) | Modify a slot | 870 |
+| [MH-27](stories/MH-27.md) | Update hiking plans | 870 |
+| [MH-28](stories/MH-28.md) | Register a hiker's plan | 860 |
+| [MH-29](stories/MH-29.md) | Detail the route | 850 |
+| [MH-30](stories/MH-30.md) | Manage registered hikes | 840 |
 
 
 ## Clarification requests
